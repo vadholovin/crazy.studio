@@ -1,26 +1,26 @@
 <?php
 
 // Your email address
-$to = 'info@html5css3templates.com';
+$to = 'artem@crazy.studio';
 
 $subject = $_POST['subject'];;
 
 // Don't edit below unless you know what you're doing
 if($to) {
-	$name = $_POST['name'];
-	$email = $_POST['email'];
+	$name = $_POST['form_name'];
+	$email = $_POST['form_email'];
 	
 	$fields = array(
 		0 => array(
-			'text' => 'Name',
+			'text' => 'Имя',
 			'val' => $_POST['name']
 		),
 		1 => array(
-			'text' => 'Email address',
+			'text' => 'Email',
 			'val' => $_POST['email']
 		),
 		2 => array(
-			'text' => 'Message',
+			'text' => 'Сообщение',
 			'val' => $_POST['message']
 		)
 	);
@@ -34,7 +34,7 @@ if($to) {
 	$headers = "MIME-Version: 1.0\r\nContent-type: text/html; charset=utf-8\r\n";
 	$headers .= "From: \"" . $name . "\" \r\n";
 	$headers .= "Reply-To: " .  $email . "\r\n";
-	$message = utf8_decode($message);
+	
 	
 	mail($to, $subject, $message, $headers);
 	

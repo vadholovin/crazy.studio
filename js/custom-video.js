@@ -26,7 +26,7 @@ $(document).ready(function () {
 
 
 //MENU --------------------------------------------------------------------------------/
-	$(".menu a").click(function () {
+	$(".menu a, .dropnav__item").click(function () {
         $("html, body").animate({
             scrollTop: $($(this).attr("href")).offset().top + "px"
         }, {
