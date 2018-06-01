@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <title>Crazy Studio | </title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+  <!-- CSS Styles -->
+  <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+  <link rel="stylesheet" type="text/css" href="css/YTPlayer.css" media="all">
+  
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Google Web Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Shadows+Into+Light|Oswald:400,300,700" rel="stylesheet prefetch" type="text/css">
+    
+  <!-- JavaScripts -->
+  <script src="js/modernizr-2.6.2.js"></script>
+  <script src="js/jquery-1.11.3.min.js"></script>
+    
+
+
+  <script type="text/javascript">
+
+      var isMobile = false;
+  
+      if( navigator.userAgent.match(/Android/i) || 
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) || 
+        navigator.userAgent.match(/iPad/i)|| 
+        navigator.userAgent.match(/iPod/i) || 
+        navigator.userAgent.match(/BlackBerry/i)){
+                
+        isMobile = true;
+              
+      }
+      
+      /*iOS5 fixed-menu fix*/
+      var iOS5 = false;
+      
+      if (navigator.userAgent.match(/OS 5(_\d)+ like Mac OS X/i)){
+      
+        iOS5 = true;
+      
+      }
+    
+      
+  </script>
+    
+    
+  
+  <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+    <script type="text/javascript">
+
+      jQuery(function(){
+
+        jQuery("button").not(".command").click(function(){
+          jQuery("button").not(".command").removeClass("sel");
+          jQuery(this).addClass("sel");
+        });
+
+        //debug functions
+        jQuery("#bgndVideo").on("YTPStart", function(){ jQuery("#eventListener").html("YTPStart")});
+        jQuery("#bgndVideo").on("YTPEnd", function(){ jQuery("#eventListener").html("YTPEnd")});
+        jQuery("#bgndVideo").on("YTPPause", function(){ jQuery("#eventListener").html("YTPPause")});
+        jQuery("#bgndVideo").on("YTPBuffering", function(){ jQuery("#eventListener").html("YTPBuffering")});
+
+        jQuery("#bgndVideo").mb_YTPlayer();
+
+      });
+
+    </script>
+    <script>
+    $(document).ready(function(){
+      $("nav").sticky({topSpacing:0});
+    });
+  </script>
+    
+
+</head>
+
+<body ontouchstart="">
+
+<!-- Start Homepage -->
+  <div id="homepage" class="homepage section">
+    
+    <div class="container">
+      <div class="sixteen columns">
+        <img alt="" class="logo" src="images/logo.png" />
+      </div>
+            
+      <a id="bgndVideo" href="http://www.youtube.com/watch?v=Df8ofF1mbdA" class="movie {opacity:1, isBgndMovie:{width:'window',mute:false}, optimizeDisplay:true, showControls:true, ratio:'16/9',startAt:3,quality:'hd720',addRaster:true,lightCrop:true}"></a>
+     
+    </div>
+  </div>      
+  
+<!--End homepage -->
+
+<!-- Start Navigation -->
+  <nav>
+    <div class="flex-container">
+      <div class="dropnav__hamburger"></div>
+
+      <!-- Start Nav Menu -->
+      <ul class="menu" id="nav">
+        <li class="menu__li"><a class="menu__item" href="#homepage">Главная</a></li>
+        <li class="menu__li"><a class="menu__item" href="#folio">Портфолио</a></li>
+        <li class="menu__li"><a class="menu__item" href="#about">О нас</a></li>
+        <li class="menu__li"><a class="menu__item" href="#services">Услуги</a></li>
+        <li class="menu__li"><a class="menu__item" href="#contact">Контакты</a></li>
+      </ul>
+      <!-- End Nav Menu -->
+
+      <!-- Start Dropmenu for mobile -->
+      <div class="dropnav is-hidden">
+        <ul class="dropnav__ul">
+          <li class="dropnav__li">
+            <a href="#homepage" class="dropnav__item">Главная</a>
+          </li>
+          <li class="dropnav__li">
+            <a href="#folio" class="dropnav__item">Портфолио</a>
+          </li>
+          <li class="dropnav__li">
+            <a href="#about" class="dropnav__item">О нас</a>
+          </li>
+          <li class="dropnav__li">
+            <a href="#services" class="dropnav__item">Услуги</a>
+          </li>
+          <li class="dropnav__li">
+            <a href="#contact" class="dropnav__item">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="menu-btn" onclick="document.querySelector('#contact_form').scrollIntoView(true)">Задать вопрос</a>
+    </div>
+    <!-- End Dropmenu for mobile -->
+
+  </nav>
+<!-- End Navigation --> 
+     
+     
+<!--start portfolio -->
+  <div id="folio" class="page section">
+    <div class="container">
+      <div class="sixteen columns">
+        <h1>Портфолио</h1>
+        <h3><span class="small">Те,</span> <span class="smallBold">кто</span>
+        <br><span class="largeBold"> не хотят ничему</span><span class="large"> подражать</span>
+        <br><span class="medium">ничего</span><span class="mediumBold"> не создают.</span> 
+        <br><h3>Сальвадор Дали</h3>
+      </div>
+    </div>
+    <div class="gallerySelector">
+      <ul class="gallerySelectorList">
+        <li class="current"><a data-filter="article.portfolio" href="#">Все</a></li>
+        <li><a data-filter="article.portfolio[data-category~='illustration']" href="#">Веб-сайты</a></li>
+        <li><a data-filter="article.portfolio[data-category~='photography']" href="#">Лэндинги</a></li>
+        <li><a data-filter="article.portfolio[data-category~='branding']" href="#">Веб-дизайн</a></li>
+        <li><a data-filter="article.portfolio[data-category~='video']" href="#">Полиграфия</a></li>
+      </ul>
+    </div>
+        
+    <section class="portfolio_container">
+      <article class="portfolio" data-category="video">
+          <section class="thumbImage">
+              <img src="images/gallery/polygraphy-goodwill-capital-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Фирменный стиль</h3>
+                      <p>Фирменный стиль для компании "Goodwill Capital"</p>
+                      <a class="thumbLink" href="images/gallery/polygraphy-goodwill-capital.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="illustration">
+          <section class="thumbImage">
+              <img src="images/gallery/web-belgorodinvest-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Сайт под ключ</h3>
+                      <p>http://www.belgorodinvest.com/</p>
+                      <a class="thumbLink" href="images/gallery/web-belgorodinvest.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="photography">
+          <section class="thumbImage">
+              <img src="images/gallery/lp-tennis-podmoscow-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Landing Page</h3>
+                      <p>Теннисный центр "Подмосковье"</p>
+                      <a class="thumbLink" href="images/gallery/lp-tennis-podmoscow.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="video">
+          <section class="thumbImage">
+              <img src="images/gallery/polygraphy-new-year-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Буклеты</h3>
+                      <p>Приглашение на Новогоднюю Елку</p>
+                      <a class="thumbLink" href="images/gallery/polygraphy-new-year.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="illustration">
+          <section class="thumbImage">
+              <img src="images/gallery/web-glavbook-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">CRM-система</h3>
+                      <p>www.glavbook.com </p>
+                      <a class="thumbLink" href="images/gallery/web-glavbook.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="video">
+          <section class="thumbImage">
+              <img src="images/gallery/polygraphy-decker-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Фирменный стиль</h3>
+                      <p>Decker</p>
+                      <a class="thumbLink" href="images/gallery/polygraphy-decker.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="photography">
+          <section class="thumbImage">
+              <img src="images/gallery/lp-style-wood-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Landing Page</h3>
+                      <p>Style wood</p>
+                      <a class="thumbLink" href="images/gallery/lp-style-wood.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="video">
+          <section class="thumbImage">
+              <img src="images/gallery/polygraphy-2018-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Буклеты</h3>
+                      <p>Наклейка платежной системы "Мир"</p>
+                      <a class="thumbLink" href="images/gallery/polygraphy-2018.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="branding">
+          <section class="thumbImage">
+              <img src="images/gallery/wd-ra-project-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Веб-дизайн</h3>
+                      <p>RA-Project</p>
+                      <a class="thumbLink" href="images/gallery/wd-ra-project.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="illustration">
+          <section class="thumbImage">
+              <img src="images/gallery/web-daminart-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Веб-сайт</h3>
+                      <p>"Даминарт"</p>
+                      <a class="thumbLink" href="images/gallery/web-daminart.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="photography">
+          <section class="thumbImage">
+              <img src="images/gallery/lp-ideal-picture-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Landing page</h3>
+                      <p>"Идеальная картина"</p>
+                      <a class="thumbLink" href="images/gallery/lp-ideal-picture.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="video">
+          <section class="thumbImage">
+              <img src="images/gallery/polygraphy-seven-sky-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Визитки</h3>
+                      <p>Seven Sky</p>
+                      <a class="thumbLink" href="images/gallery/polygraphy-seven-sky.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="branding">
+          <section class="thumbImage">
+              <img src="images/gallery/wd-montenapoleone-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Веб-дизайн</h3>
+                      <p>Montenapoleone</p>
+                      <a class="thumbLink" href="images/gallery/wd-montenapoleone.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="photography">
+          <section class="thumbImage">
+              <img src="images/gallery/lp-wooder-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Landing page</h3>
+                      <p>Wooder</p>
+                      <a class="thumbLink" href="images/gallery/lp-wooder.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="video">
+          <section class="thumbImage">
+              <img src="images/gallery/polygraphy-barry-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Буклеты</h3>
+                      <p>Рекламный буклет "Barry"</p>
+                      <a class="thumbLink" href="images/gallery/polygraphy-barry.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="branding">
+          <section class="thumbImage">
+              <img src="images/gallery/wd-eknzp-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Веб-дизайн</h3>
+                      <p>Екатеринбуржская компания по недвижимости и защите прав</p>
+                      <a class="thumbLink" href="images/gallery/wd-eknzp.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="branding">
+          <section class="thumbImage">
+              <img src="images/gallery/wd-lombard-vernyj-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Веб-дизайн</h3>
+                      <p>Ломбард "Верный"</p>
+                      <a class="thumbLink" href="images/gallery/wd-lombard-vernyj.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="illustration">
+          <section class="thumbImage">
+              <img src="images/gallery/web-dixon-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Веб-сайт</h3>
+                      <p>Online-shop  DIXON</p>
+                      <a class="thumbLink" href="images/gallery/web-dixon.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="branding">
+          <section class="thumbImage">
+              <img src="images/gallery/wd-iclean-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Веб-дизайн</h3>
+                      <p>Автомойка самообслуживания "iClean"</p>
+                      <a class="thumbLink" href="images/gallery/wd-iclean.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="illustration">
+          <section class="thumbImage">
+              <img src="images/gallery/web-inseller-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Веб-сайт</h3>
+                      <p>Inseller</p>
+                      <a class="thumbLink" href="images/gallery/web-inseller.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="video">
+          <section class="thumbImage">
+              <img src="images/gallery/polygraphy-backpack-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Логотип</h3>
+                      <p>Backpack</p>
+                      <a class="thumbLink" href="images/gallery/polygraphy-backpack.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="branding">
+          <section class="thumbImage">
+              <img src="images/gallery/wd-sport-boxing-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Веб-дизайн</h3>
+                      <p>Sport-boxing.ru</p>
+                      <a class="thumbLink" href="images/gallery/wd-sport-boxing.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="photography">
+          <section class="thumbImage">
+              <img src="images/gallery/lp-baker-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Landing page</h3>
+                      <p>Baker inc.</p>
+                      <a class="thumbLink" href="images/gallery/lp-baker.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="branding">
+          <section class="thumbImage">
+              <img src="images/gallery/webdesign-specialist-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Мобильные приложения</h3>
+                      <p>Специалист</p>
+                      <a class="thumbLink" href="images/gallery/webdesign-specialist.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="video">
+          <section class="thumbImage">
+              <img src="images/gallery/polygraphy-heavy-metal-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Каталог</h3>
+                      <p>Heavy Metal</p>
+                      <a class="thumbLink" href="images/gallery/polygraphy-heavy-metal.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="illustration">
+          <section class="thumbImage">
+              <img src="images/gallery/web-meat-recipes-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Веб-сайт</h3>
+                      <p>"Мясные рецепты"</p>
+                      <a class="thumbLink" href="images/gallery/web-meat-recipes.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="photography">
+          <section class="thumbImage">
+              <img src="images/gallery/lp-larkin-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Landing page</h3>
+                      <p>Павел Ларкин</p>
+                      <a class="thumbLink" href="images/gallery/lp-larkin.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="branding">
+          <section class="thumbImage">
+              <img src="images/gallery/wd-sea-trips-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Веб-дизайн</h3>
+                      <p>Tripshock</p>
+                      <a class="thumbLink" href="images/gallery/wd-sea-trips.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="branding">
+          <section class="thumbImage">
+              <img src="images/gallery/wd-divnorechje-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Веб-дизайн</h3>
+                      <p>"Дивноречье"</p>
+                      <a class="thumbLink" href="images/gallery/wd-divnorechje.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="video">
+          <section class="thumbImage">
+              <img src="images/gallery/polygraphy-merchante-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Логотип</h3>
+                      <p>The Merchante of Chai</p>
+                      <a class="thumbLink" href="images/gallery/polygraphy-merchante.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="branding">
+          <section class="thumbImage">
+              <img src="images/gallery/webdesign-playskool-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Веб-дизайн</h3>
+                      <p>playskool.ru</p>
+                      <a class="thumbLink" href="images/gallery/webdesign-playskool.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="video">
+          <section class="thumbImage">
+              <img src="images/gallery/polygraphy-happy-new-year-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Иллюстрации</h3>
+                      <p>С новым годом 2018!</p>
+                      <a class="thumbLink" href="images/gallery/polygraphy-happy-new-year.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="video">
+          <section class="thumbImage">
+              <img src="images/gallery/polygraphy-your-busy-board-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Листовка</h3>
+                      <p>Детские бизиборды</p>
+                      <a class="thumbLink" href="images/gallery/polygraphy-your-busy-board.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="branding">
+          <section class="thumbImage">
+              <img src="images/gallery/wd-nikonstore-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Веб-дизайн</h3>
+                      <p>NikonStore</p>
+                      <a class="thumbLink" href="images/gallery/wd-nikonstore.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="photography">
+          <section class="thumbImage">
+              <img src="images/gallery/lp-highlights-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Landing page</h3>
+                      <p>Highlights</p>
+                      <a class="thumbLink" href="images/gallery/lp-highlights.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="video">
+          <section class="thumbImage">
+              <img src="images/gallery/polygraphy-buhgalter-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Визитка</h3>
+                      <p>Бухгалтерские услуги</p>
+                      <a class="thumbLink" href="images/gallery/polygraphy-buhgalter.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+      <article class="portfolio" data-category="photography">
+          <section class="thumbImage">
+              <img src="images/gallery/lp-perfect-ltd-thumb.jpg" alt="" class="fullwidth">
+              <div class="thumbTextWrap">
+                  <div class="thumbText">
+                      <h3 class="sectionTitle">Landing page</h3>
+                      <p>Perfect Ltd.</p>
+                      <a class="thumbLink" href="images/gallery/lp-perfect-ltd.jpg" rel="prettyPhoto[gallery1]" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum."><i class="icon-search"></i></a>
+                  </div>
+              </div>
+          </section>
+      </article>
+    </section>
+
+    <div class="portfolioBottom"></div>
+        
+    <!--start parallax 1-->
+    <div id="parallax-1" class="parallax fixed" style="background-image: url(images/parallax/parallax-1.jpg);">
+      <div class="quoteWrap">
+        <div class="quote">
+          <div class="container">
+            <div class="sixteen columns">
+              <h3><span class="large">Необычные</span> <span class="largeBold">проекты</span>
+                <br><span class="medium">за</span> <span class="mediumBold">обычные деньги.</span></h3>      
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <!--end parallax-->
+    
+  </div>
+<!--end portfolio-->       
+     
+<!--start About -->
+  <div id="about" class="page section">
+  
+    <div class="container aboutContainer">
+      <div class="sixteen columns">
+        <h1><span>Crazy<br /></span>Studio</h1>       
+          <h3>
+            <br><span class="mediumBold">Коллективное творчество - </span> <span class="medium">это чепуха,</span>
+            <br><span class="medium">но творчество в коллективе - </span><span class="mediumBold">это единственный вид </span>
+            <br><span class="large">настоящего и плодотворного</span> <span class="largeBold">творчества.</span>
+          </h3>
+      </div>
+        
+      <div class="one-third column">
+        <div class="teamImage">
+          <img class="scale-with-grid" src="images/team/director.jpg" alt=""/> 
+          <div class="teamName">
+            <h2>Коровай Артем</h2>
+            <h3>Креативный директор</h3>
+            <ul class="socialLinksTeam tooltips">
+              <li><a href="https://vk.com/artemgbweb" rel="tooltip" title="Vkontakte" target="_blank"><span class="ic-vk"></span></a></li>
+              <li><a href="https://www.facebook.com/artemagent" rel="tooltip" title="Facebook" target="_blank"><span class="ic-facebook"></span></a></li>
+              <li><a href="https://t.me/artemcrazy" rel="tooltip" title="Telegram" target="_blank"><span class="ic-telegram" target="_blank"></span></a></li>
+            </ul>
+          </div>
+        </div>                        
+        <p>Успех директора <span class="highlight">на 15%</span> зависит от его профессиональных навыков и на <span class="highlight">85%</span> – от умения общаться с людьми. </p>
+        
+        <h3 class="sectionTitle">Навыки</h3>
+        <div class="teamSkill">
+          <ul>
+            <li>
+              <p class="skill">Организация процессов</p>
+              <div class="bar percent100">
+              <p class="percent">100%</p></div>
+            </li>
+            <li>
+              <p class="skill">Коммуникация с заказчиком</p>
+              <div class="bar percent100">
+              <p class="percent">100%</p></div>
+            </li>
+            <li>
+              <p class="skill">Планирование</p>
+              <div class="bar percent90">
+              <p class="percent">90%</p></div>
+            </li>
+            <li>
+              <p class="skill">Контроль процессов</p>
+              <div class="bar percent80">
+              <p class="percent">80%</p></div>
+            </li>
+            <li>
+              <p class="skill">MS Word</p>
+              <div class="bar percent25">
+              <p class="percent">25%</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+        
+      <div class="one-third column">
+        <div class="teamImage">
+          <img class="scale-with-grid" src="images/team/designer.jpg" alt=""/> 
+          <div class="teamName">
+            <h2>Анастасия Зеленская</h2>
+            <h3>Арт-директор</h3>
+            <ul class="socialLinksTeam tooltips">
+              <li><a href="https://vk.com/a_zelenskay" rel="tooltip" title="Vkontakte" target="_blank"><span class="ic-vk"></span></a></li>
+              <li><a href="https://www.facebook.com/anastasiya.zelenskaya.520" rel="tooltip" title="Facebook" target="_blank"><span class="ic-facebook" target="_blank"></span></a></li>
+              <li><a href="" rel="tooltip" title="Telegram"><span class="ic-telegram" target="_blank"></span></a></li>
+            </ul>
+          </div>
+        </div>                        
+        <p>Есть три ответа на результат дизайна – да, нет и <span class="highlight">НИЧЕГО СЕБЕ</span> «Ничего себе» – это то, к чему надо стремиться».</p>
+          
+        <h3 class="sectionTitle">Навыки</h3>
+        <div class="teamSkill">
+          <ul>
+            <li>
+              <p class="skill">Photoshop</p>
+              <div class="bar percent100">
+              <p class="percent">100%</p></div>
+            </li>
+            <li>
+              <p class="skill">Illustrator</p>
+              <div class="bar percent100">
+              <p class="percent">100%</p></div>
+            </li>
+            <li>
+              <p class="skill">Веб-дизайн</p>
+              <div class="bar percent100">
+              <p class="percent">100%</p></div>
+            </li>
+            <li>
+              <p class="skill">Полиграфия</p>
+              <div class="bar percent100">
+              <p class="percent">100%</p></div>
+            </li>
+            <li>
+              <p class="skill">Клининг</p>
+              <div class="bar percent25">
+              <p class="percent">25%</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+        
+      <div class="one-third column">
+        <div class="teamImage">
+          <img class="scale-with-grid" src="images/team/developer.jpg" alt=""/> 
+          <div class="teamName">
+            <h2>Вадим Головин</h2>
+            <h3>Веб-разработчик</h3>
+            <ul class="socialLinksTeam tooltips">
+              <li><a href="https://vk.com/id382163982" rel="tooltip" title="Vkontakte" target="_blank"><span class="ic-vk"></span></a></li>
+              <li><a href="https://www.facebook.com/leder.lowenzahn" rel="tooltip" title="Facebook" target="_blank"><span class="ic-facebook"></span></a></li>
+              <li><a href="https://t.me/vadhol" rel="tooltip" title="Telegram" target="_blank"><span class="ic-telegram"></span></a></li>
+            </ul>
+          </div>
+        </div>                        
+        <p>Как видно, <span class="highlight">совершенство</span> достигается не тогда, когда уже нечего прибавить, но когда уже ничего нельзя отнять.</p>
+        
+        <h3 class="sectionTitle">Навыки</h3>
+        <div class="teamSkill">
+          <ul>
+            <li>
+              <p class="skill">HTML5</p>
+              <div class="bar percent100">
+              <p class="percent">100%</p></div>
+            </li>
+            <li>
+              <p class="skill">CSS3</p>
+              <div class="bar percent100">
+              <p class="percent">100%</p></div>
+            </li>
+            <li>
+              <p class="skill">JavaScript</p>
+              <div class="bar percent70">
+              <p class="percent">70%</p></div>
+            </li>
+            <li>
+              <p class="skill">WordPress</p>
+              <div class="bar percent60">
+              <p class="percent">60%</p></div>
+            </li>
+            <li>
+              <p class="skill">Оптимизация</p>
+              <div class="bar percent80">
+              <p class="percent">80%</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+        
+      <div class="sixteen columns">
+        <h3 class="sectionTitle">Студия в цифрах</h3>
+      </div>
+        
+      <div class="statsWrap">
+        <div class="stats">
+          <div class="statDummy"></div>
+          <div class="statInfo">
+              <p class="statNumber">98%</p>
+              <p class="statText">Положительных отзывов</p>
+          </div>
+        </div>
+      </div>
+      <div class="statsWrap">
+        <div class="stats">
+          <div class="statDummy"></div>
+          <div class="statInfo">
+              <p class="statNumber">3</p>
+              <p class="statText">Награды в 2017 году</p>
+          </div>
+        </div>
+      </div>
+      <div class="statsWrap">
+        <div class="stats">
+          <div class="statDummy"></div>
+          <div class="statInfo">
+              <p class="statNumber">14</p>
+              <p class="statText">Сотрудников</p>
+          </div>
+        </div>
+      </div>
+      <div class="statsWrap">
+        <div class="stats">
+          <div class="statDummy"></div>
+          <div class="statInfo">
+              <p class="statNumber">36</p>
+              <p class="statText">Чашек кофе в день</p>
+          </div>
+        </div>
+      </div>
+      <div class="statsWrap">
+        <div class="stats">
+          <div class="statDummy"></div>
+          <div class="statInfo">
+              <p class="statNumber">14</p>
+              <p class="statText">Сайтов в ТОП-3</p>
+          </div>
+        </div>
+      </div>
+      <div class="statsWrap">
+        <div class="stats">
+          <div class="statDummy"></div>
+          <div class="statInfo">
+              <p class="statNumber">2</p>
+              <p class="statText">Года на рынке</p>
+          </div>
+        </div>
+      </div>
+      <div class="statsWrap">
+        <div class="stats">
+          <div class="statDummy"></div>
+          <div class="statInfo">
+              <p class="statNumber">67</p>
+              <p class="statText">Создано сайтов</p>
+          </div>
+        </div>
+      </div>
+      <div class="statsWrap">
+        <div class="stats">
+          <div class="statDummy"></div>
+          <div class="statInfo">
+              <p class="statNumber statNumberSmall">122,345</p>
+              <p class="statText">Уникальных посетителей</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end about--> 
+
+<!--start parallax 2-->
+  <div id="parallax-2" class="parallax fixed" style="background-image: url(images/parallax/parallax-2.jpg);">
+    <div class="quoteWrap">
+      <div class="quote">
+        <div class="container">
+          <div class="sixteen columns">
+            <h3><span class="smallBold">Истинный</span> <span class="small">художник</span>
+            <br><span class="large">не тот, кто</span> <span class="largeBold">вдохновлен,</span>
+            <br><span class="medium">а тот, кто</span><span class="mediumBold"> вдохновляет других.</span> 
+            <br><span class="author">Сальвадор Дали</span></h3>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+<!--end parallax 2-->    
+    
+<!--start Services -->
+  <div id="services" class="page section">
+    <div class="container servicesContainer">
+      <div class="sixteen columns">
+        <h1><span>Наши</span><br/>услуги</h1>
+        <h3><span class="mediumBold">Уникальное</span> <span class="medium">сочетание</span>
+        <br><span class="medium">талантов</span> <span class="mediumBold">позволяет нам</span>
+        <br><span class="large">предложить</span> <span class="largeBold">такие</span>
+        <br><span class="medium">разнообразные</span> <span class="mediumBold">услуги.</span> 
+        </h3>
+      </div>
+  
+      <div class="one-third column">
+        <div class="serviceItem landing-page">
+          <div class="serviceInfoWrap">
+            <div class="serviceInfo">
+              <div class="serviceInfoFront"></div>
+              <div class="serviceInfoBack">
+                <div class="serviceIcon"><i class="ic-rocket"></i></div>
+                <h3>Лендинг</h3>
+                <a href="/briefs/brief-land.html" class="button button--big" target="_blank">Заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="one-third column">
+        <div class="serviceItem corp-site">
+          <div class="serviceInfoWrap">
+            <div class="serviceInfo">
+              <div class="serviceInfoFront"></div>
+              <div class="serviceInfoBack">
+                <div class="serviceIcon"><i class="ic-sitemap"></i></div>
+                <h3>Многостраничный сайт</h3>
+                <a href="/briefs/brief-multipage.html" class="button button--big" target="_blank">Заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="one-third column">
+        <div class="serviceItem online-shop">
+          <div class="serviceInfoWrap">
+            <div class="serviceInfo">
+              <div class="serviceInfoFront"></div>
+              <div class="serviceInfoBack">
+                <div class="serviceIcon"><i class="ic-cart"></i></div>
+                <h3>Интернет-магазин</h3>
+                <a href="/briefs/brief-shop.html" class="button button--big" target="_blank">Заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="one-third column">
+        <div class="serviceItem logos">
+          <div class="serviceInfoWrap">
+            <div class="serviceInfo">
+              <div class="serviceInfoFront"></div>
+              <div class="serviceInfoBack">
+                <div class="serviceIcon"><i class="ic-shield"></i></div>
+                <h3>Логотип</h3>
+                <a href="/briefs/brief-logo.html" class="button button--big" target="_blank">Заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="one-third column">
+        <div class="serviceItem polygraphy">
+          <div class="serviceInfoWrap">
+            <div class="serviceInfo">
+              <div class="serviceInfoFront"></div>
+              <div class="serviceInfoBack">
+                <div class="serviceIcon"><i class="ic-newspaper"></i></div>
+                <h3>Полиграфия</h3>
+                <a href="/briefs/brief-polygraphy.html" class="button button--big" target="_blank">Заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="one-third column">
+        <div class="serviceItem brand">
+          <div class="serviceInfoWrap">
+            <div class="serviceInfo">
+              <div class="serviceInfoFront"></div>
+              <div class="serviceInfoBack">
+                <div class="serviceIcon"><i class="ic-briefcase"></i></div>
+                <h3>Фирменный стиль</h3>
+                <a href="/briefs/brief-identity.html" class="button button--big" target="_blank">Заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end services-->  
+
+<!--start parallax 3-->
+  <div id="parallax-3" class="parallax fixed" style="background-image: url(images/parallax/parallax-3.jpg);">
+    <div class="quoteWrap">
+      <div class="quote">
+        <div class="container">
+          <div class="sixteen columns">
+            <h3><span class="largeBold">Интеллект</span> <span class="large">без амбиций -</span>
+              <br><span class="medium">что птица</span> <span class="mediumBold">без крыльев.</span> 
+              <br><span class="author">Сальвадор Дали</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end parallax 3-->    
+  
+<!--start contact-->
+  <div id="contact" class="page section">
+    <div class="container contactContainer">
+      <div class="sixteen columns">
+        <h1>Контакты</h1>
+        <h3><span class="mediumBold">Напишите</span> <span class="medium">нам</span>
+        <br><span class="medium">и мы</span> <span class="mediumBold">поможем</span>
+        <br><span class="large">в развитии</span> <span class="largeBold">вашего бизнеса.</span></h3>
+      </div> 
+                    
+      <div class="sixteen columns marginTop contactDetails">
+        <ul>
+          <li><span class="icon-phone"></span>Тел.: <a href="tel:+79651500303">+7 (965) 150-03-03</a></li>
+          <li><span class="icon-envelop"></span>Email: <a href="mailto:office@crazy.studio">office@crazy.studio</a></li>
+          <li><span class="ic-telegram"></span>Telegram: <a href="https://t.me/artemcrazy" target="_blank">t.me/artemcrazy</a></li>
+        </ul>
+      </div>
+          
+      <div id="contact_form">
+        <div class="two-thirds column marginTop formWrap">
+          <form action="" class="contactForm">
+            <div class="formSecWrap">
+              <label for="form_name">Имя</label>
+              <input type="text" id="form_name" name="form_name" value="" />
+
+              <label for="form_email">Email</label>
+              <input type="text" name="form_email" id="form_email" value="" />
+        
+              <label for="form_subject">Заголовок</label>
+              <input type="text" name="form_subject" id="form_subject" value="" />
+            </div>
+            <div class="formSecWrap formSecWrap2">
+              <label for="form_message">Сообщение</label>
+              <textarea class="textarea" name="form_message" id="form_message"></textarea>
+              
+              <input class="button feedback" id="submit-form" type="submit" name="submit" value="Отправить" />
+            </div>
+            <div id="success"></div>
+          </form>
+        </div>
+      </div>
+          
+      <!-- Social -->
+      <div class="sixteen columns">
+        <h3 class="sectionTitle">Социальные сети</h3>
+        <ul class="socialLinks">
+          <li><a href="https://vk.com/crazy.studio" title="Vkontakte" target="_blank"><i class="ic-vk"></i></a></li>
+          <li><a href="https://www.facebook.com/Crazystudio-924651561049957/" title="Facebook" target="_blank"><i class="ic-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/crazy.studio.official/" title="Instagram" target="_blank"><i class="ic-instagram"></i></a></li>
+        </ul>
+      </div>
+      <!-- Social -->
+    </div>
+  </div>
+<!--end contact--> 
+
+<!--start footer-->
+  <div id="footer">
+    <div class="container">
+      <div class="sixteen columns"> 
+        <p class="copyright">&copy; Crazy Studio 2017</p>
+      </div>
+    </div>
+  </div>
+<!--end footer-->
+
+
+<!-- JavaScripts -->
+<script src="js/iOS-timer.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.isotope.run.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.mobile-touch-swipe-1.0.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.parallax-1.1.3.js"></script>
+<script src="js/contact_form.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/retina.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript">
+  function moveTo(contentArea){
+    var goPosition = $(contentArea).offset().top;
+    $('html,body').animate({ scrollTop: goPosition}, 'slow');
+  }
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    
+    $("a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',slideshow:6000});
+    $(".contactDetails a[rel^='prettyPhoto']:first").prettyPhoto({
+      custom_markup: '<div id="map_canvas" style="width:500px; height:500px"></div>',
+      changepicturecallback: function(){ initialize(); }
+    });
+  });
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter47050185 = new Ya.Metrika({
+                    id:47050185,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/47050185" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>

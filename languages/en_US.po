@@ -1,0 +1,413 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Crazy Studio 1.0\n"
+"POT-Creation-Date: 2018-05-14 14:00+0300\n"
+"PO-Revision-Date: 2018-05-14 14:01+0300\n"
+"Last-Translator: \n"
+"Language-Team: Crazy Studio Team\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: functions.php:54
+msgid "Site Options ("
+msgstr ""
+
+#: index.php:108 index.php:120
+msgid "Главная"
+msgstr "Home"
+
+#: index.php:109 index.php:123 index.php:152
+msgid "Портфолио"
+msgstr "Portfolio"
+
+#: index.php:110 index.php:126
+msgid "О нас"
+msgstr "About"
+
+#: index.php:111 index.php:129
+msgid "Услуги"
+msgstr "Services"
+
+#: index.php:112 index.php:132 index.php:593
+msgid "Контакты"
+msgstr "Contacts"
+
+#: index.php:139
+msgid "Задать вопрос"
+msgstr "Ask a Question"
+
+#: index.php:153
+msgid "Те,"
+msgstr "Those"
+
+#: index.php:153
+msgid "кто"
+msgstr "who"
+
+#: index.php:154
+msgid "не хотят ничему"
+msgstr "do not want to"
+
+#: index.php:154
+msgid "подражать"
+msgstr "imitate anything, "
+
+#: index.php:155
+msgid "ничего"
+msgstr "produce"
+
+#: index.php:155
+msgid "не создают."
+msgstr "nothing."
+
+#: index.php:156 index.php:464 index.php:580
+msgid "Сальвадор Дали"
+msgstr "Salvador Dalí"
+
+#: index.php:161
+msgid "Все"
+msgstr "All"
+
+#: index.php:162
+msgid "Веб-сайты"
+msgstr "Web sites"
+
+#: index.php:163
+msgid "Лендинги"
+msgstr "Landing Pages"
+
+#: index.php:164 index.php:310
+msgid "Веб-дизайн"
+msgstr "WebDesign"
+
+#: index.php:165 index.php:315 index.php:547
+msgid "Полиграфия"
+msgstr "Printing"
+
+#: index.php:209
+msgid "Необычные"
+msgstr "Unusual"
+
+#: index.php:209
+msgid "проекты"
+msgstr "Projects"
+
+#: index.php:210
+msgid "за"
+msgstr "for"
+
+#: index.php:210
+msgid "обычные деньги."
+msgstr "Usual money."
+
+#: index.php:228
+msgid "Коллективное творчество - "
+msgstr "Collective creativity - "
+
+#: index.php:228
+msgid "это чепуха,"
+msgstr "it's crap,"
+
+#: index.php:229
+msgid "но творчество в коллективе - "
+msgstr "but the creativity in the crew"
+
+#: index.php:229
+msgid "это единственный вид"
+msgstr "is the only"
+
+#: index.php:230
+msgid "настоящего и плодотворного"
+msgstr "TRUE"
+
+#: index.php:230
+msgid "творчества."
+msgstr "creativity."
+
+#: index.php:238
+msgid "Коровай Артем"
+msgstr "Artem Korovai"
+
+#: index.php:239
+msgid "Креативный директор"
+msgstr "Creative Director"
+
+#: index.php:247
+msgid "Успех директора на"
+msgstr "The success of the director is"
+
+#: index.php:247
+msgid "зависит от его профессиональных навыков и на"
+msgstr "dependent on his professional skills and"
+
+#: index.php:247
+msgid "– от умения общаться с людьми."
+msgstr "on the ability to communicate with people."
+
+#: index.php:249 index.php:296 index.php:343
+msgid "Навыки"
+msgstr "Skills"
+
+#: index.php:253
+msgid "Организация процессов"
+msgstr "Organization of processes"
+
+#: index.php:258
+msgid "Коммуникация с заказчиком"
+msgstr "Communication with the customer"
+
+#: index.php:263
+msgid "Планирование"
+msgstr "Planning"
+
+#: index.php:268
+msgid "Контроль процессов"
+msgstr "Process control"
+
+#: index.php:285
+msgid "Анастасия Зеленская"
+msgstr ""
+
+#: index.php:286
+msgid "Арт-директор"
+msgstr "Art Director"
+
+#: index.php:294
+msgid "Есть три ответа на результат дизайна – да, нет и"
+msgstr "There are three answers to the result of the design - yes, no and"
+
+#: index.php:294
+msgid "НИЧЕГО СЕБЕ"
+msgstr "WOW"
+
+#: index.php:294
+msgid "«Ничего себе» – это то, к чему надо стремиться."
+msgstr "\"Wow\" - this is what you need to strive for."
+
+#: index.php:320
+msgid "Клининг"
+msgstr "Cleaning"
+
+#: index.php:332
+msgid "Вадим Головин"
+msgstr "Vadim Golovin"
+
+#: index.php:333
+msgid "Веб-разработчик"
+msgstr "Web developer"
+
+#: index.php:341
+msgid "Как видно,"
+msgstr "Apparently,"
+
+#: index.php:341
+msgid "совершенство"
+msgstr "perfection"
+
+#: index.php:341
+msgid ""
+"достигается не тогда, когда уже нечего прибавить, но когда уже ничего нельзя "
+"отнять."
+msgstr ""
+"is achieved not when there is nothing to add, but when nothing can be taken "
+"away."
+
+#: index.php:367
+msgid "Оптимизация"
+msgstr "Optimization"
+
+#: index.php:376
+msgid "Студия в цифрах"
+msgstr "Studio in figures"
+
+#: index.php:384
+msgid "Положительных отзывов"
+msgstr "of positive reviews"
+
+#: index.php:393
+msgid "Награды в 2017 году"
+msgstr "awards in 2017"
+
+#: index.php:402
+msgid "Сотрудников"
+msgstr "crew members"
+
+#: index.php:411
+msgid "Чашек кофе в день"
+msgstr "cups of coffee a day"
+
+#: index.php:420
+msgid "Сайтов в ТОП-3"
+msgstr "sites in TOP-3"
+
+#: index.php:429
+msgid "Года на рынке"
+msgstr "years on the market"
+
+#: index.php:438
+msgid "Создано сайтов"
+msgstr "sites created"
+
+#: index.php:447
+msgid "Уникальных посетителей"
+msgstr "unique visitors"
+
+#: index.php:461
+msgid "Истинный"
+msgstr "A true"
+
+#: index.php:461
+msgid "художник -"
+msgstr "artist"
+
+#: index.php:462
+msgid "не тот, кто"
+msgstr "is not one who is"
+
+#: index.php:462
+msgid "вдохновлен,"
+msgstr "inspired,"
+
+#: index.php:463
+msgid "а тот, кто"
+msgstr "but one who"
+
+#: index.php:463
+msgid "вдохновляет других."
+msgstr "inspires others."
+
+#: index.php:476
+msgid "Наши"
+msgstr "Our"
+
+#: index.php:476
+msgid "услуги"
+msgstr "services"
+
+#: index.php:477
+msgid "Уникальное"
+msgstr "UNIQUE"
+
+#: index.php:477
+msgid "сочетание"
+msgstr "COMBINATION"
+
+#: index.php:478
+msgid "талантов"
+msgstr "OF TALENTS"
+
+#: index.php:478
+msgid "позволяет нам"
+msgstr "ARE ALLOWING US"
+
+#: index.php:479
+msgid "предложить"
+msgstr "OFFER"
+
+#: index.php:479
+msgid "такие"
+msgstr "SUCH"
+
+#: index.php:480
+msgid "разнообразные"
+msgstr "VARIOUS"
+
+#: index.php:480
+msgid "услуги."
+msgstr "SERVICES."
+
+#: index.php:491
+msgid "Лендинг"
+msgstr "Landing Page"
+
+#: index.php:492 index.php:506 index.php:520 index.php:534 index.php:548
+#: index.php:562
+msgid "Заказать"
+msgstr "Offer"
+
+#: index.php:505
+msgid "Многостраничный сайт"
+msgstr "Multipage Site"
+
+#: index.php:519
+msgid "Интернет-магазин"
+msgstr "Online Store"
+
+#: index.php:533
+msgid "Логотип"
+msgstr "Logo"
+
+#: index.php:561
+msgid "Фирменный стиль"
+msgstr "Corporate Identity"
+
+#: index.php:578
+msgid "Интеллект"
+msgstr "Intelligence"
+
+#: index.php:578
+msgid "без амбиций -"
+msgstr "without ambition"
+
+#: index.php:579
+msgid "что птица"
+msgstr "is a bird"
+
+#: index.php:579
+msgid "без крыльев."
+msgstr "without wings."
+
+#: index.php:594
+msgid "Напишите"
+msgstr "WRITE"
+
+#: index.php:594
+msgid "нам"
+msgstr "US"
+
+#: index.php:595
+msgid "и мы"
+msgstr "AND WE"
+
+#: index.php:595
+msgid "поможем"
+msgstr "WILL HELP"
+
+#: index.php:596
+msgid "в развитии"
+msgstr "IN DEVELOPMENT"
+
+#: index.php:596
+msgid "вашего бизнеса."
+msgstr "OF YOUR BUSINESS"
+
+#: index.php:601
+msgid "Тел."
+msgstr "Phone"
+
+#: index.php:611
+msgid "Имя"
+msgstr "Name"
+
+#: index.php:617
+msgid "Заголовок"
+msgstr "Title"
+
+#: index.php:621
+msgid "Сообщение"
+msgstr "Text"
+
+#: index.php:624
+msgid "Отправить"
+msgstr "Send"
+
+#: index.php:633
+msgid "Социальные сети"
+msgstr "Social networks"
